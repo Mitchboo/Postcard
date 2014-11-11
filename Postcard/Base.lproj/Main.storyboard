@@ -82,6 +82,9 @@
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="29" y="121" width="97" height="30"/>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="21" y="310" width="324" height="30"/>
                                 </variation>
@@ -93,6 +96,9 @@
                                 <state key="normal" title="Send mail">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="110" y="235" width="154" height="30"/>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="214" width="203" height="30"/>
                                 </variation>
@@ -109,6 +115,15 @@
                                     <rect key="frame" x="21" y="258" width="324" height="30"/>
                                 </variation>
                             </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sD5-Mc-c8G" userLabel="nameLabel">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="21" y="169" width="198" height="42"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -118,6 +133,18 @@
                                 <exclude reference="3BK-MY-gJw"/>
                                 <exclude reference="uTG-xi-7Sg"/>
                                 <exclude reference="423-ft-mT6"/>
+                                <exclude reference="sD5-Mc-c8G"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="3BK-MY-gJw"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="3BK-MY-gJw"/>
+                                <include reference="uTG-xi-7Sg"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -125,8 +152,8 @@
                                 <include reference="tWM-vL-uaq"/>
                                 <include reference="S0K-lb-Gxo"/>
                                 <include reference="3BK-MY-gJw"/>
-                                <include reference="uTG-xi-7Sg"/>
                                 <include reference="423-ft-mT6"/>
+                                <include reference="sD5-Mc-c8G"/>
                             </mask>
                         </variation>
                     </view>
@@ -137,11 +164,12 @@
                         <outlet property="EnterNameTxtField" destination="423-ft-mT6" id="a33-bC-N6l"/>
                         <outlet property="MessageLabel" destination="tWM-vL-uaq" id="g3C-qN-2UU"/>
                         <outlet property="mailButton" destination="uTG-xi-7Sg" id="mx0-fo-pH1"/>
+                        <outlet property="nameLabel" destination="sD5-Mc-c8G" id="Bgd-6Z-w3s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1359" y="433.5"/>
+            <point key="canvasLocation" x="1420.5" y="432.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SQb-8K-uxm">
