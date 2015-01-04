@@ -158,6 +158,7 @@
                         </variation>
                     </view>
                     <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="EnterMessageTextField" destination="3BK-MY-gJw" id="VWc-hC-5Jc"/>
